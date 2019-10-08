@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41473466234B3FD5000E53CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41473465234B3FD5000E53CC /* AppDelegate.m */; };
+		41473468234B3FD8000E53CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41473467234B3FD8000E53CC /* Assets.xcassets */; };
+		4147346E234B3FD8000E53CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4147346D234B3FD8000E53CC /* main.m */; };
+		41473479234B3FD8000E53CC /* tingeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41473478234B3FD8000E53CC /* tingeTests.m */; };
+		41473484234B3FD8000E53CC /* tingeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41473483234B3FD8000E53CC /* tingeUITests.m */; };
+		414734A6234C0B6A000E53CC /* MASShortcutBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 41473493234C0B69000E53CC /* MASShortcutBinder.m */; };
+		414734A7234C0B6A000E53CC /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41473495234C0B69000E53CC /* MASShortcutView.m */; };
+		414734A8234C0B6A000E53CC /* MASShortcutValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41473497234C0B69000E53CC /* MASShortcutValidator.m */; };
+		414734A9234C0B6A000E53CC /* MASShortcutMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41473499234C0B69000E53CC /* MASShortcutMonitor.m */; };
+		414734AA234C0B6A000E53CC /* MASDictionaryTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4147349A234C0B6A000E53CC /* MASDictionaryTransformer.m */; };
+		414734AB234C0B6A000E53CC /* MASShortcutView+Bindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4147349C234C0B6A000E53CC /* MASShortcutView+Bindings.m */; };
+		414734AC234C0B6A000E53CC /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734A0234C0B6A000E53CC /* MASShortcut.m */; };
+		414734AD234C0B6A000E53CC /* MASHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734A1234C0B6A000E53CC /* MASHotKey.m */; };
+		414734AE234C0B6A000E53CC /* MASLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734A3234C0B6A000E53CC /* MASLocalization.m */; };
+		414734B2234C0B9C000E53CC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734B0234C0B9C000E53CC /* NSData+Base64.m */; };
+		414734E7234CC2A5000E53CC /* CropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734CF234CC29F000E53CC /* CropView.m */; };
+		414734E8234CC2A5000E53CC /* ToolRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D0234CC29F000E53CC /* ToolRect.m */; };
+		414734E9234CC2A5000E53CC /* FileName.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D1234CC2A0000E53CC /* FileName.m */; };
+		414734EA234CC2A5000E53CC /* ToolText.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D2234CC2A0000E53CC /* ToolText.m */; };
+		414734EC234CC2A5000E53CC /* Pasteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D4234CC2A0000E53CC /* Pasteboard.m */; };
+		414734ED234CC2A5000E53CC /* OAuthStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D5234CC2A1000E53CC /* OAuthStorage.m */; };
+		414734EE234CC2A5000E53CC /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D6234CC2A1000E53CC /* Tool.m */; };
+		414734EF234CC2A5000E53CC /* ToolMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D7234CC2A1000E53CC /* ToolMark.m */; };
+		414734F0234CC2A5000E53CC /* ToolPaletteWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D8234CC2A1000E53CC /* ToolPaletteWindowController.m */; };
+		414734F1234CC2A5000E53CC /* ScreenshotWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734D9234CC2A2000E53CC /* ScreenshotWindow.m */; };
+		414734F2234CC2A5000E53CC /* PresentationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734DA234CC2A2000E53CC /* PresentationManager.m */; };
+		414734F3234CC2A5000E53CC /* ScreenshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734DB234CC2A2000E53CC /* ScreenshotView.m */; };
+		414734F4234CC2A5000E53CC /* DropboxUploadStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734DC234CC2A2000E53CC /* DropboxUploadStorage.m */; };
+		414734F5234CC2A5000E53CC /* ToolRectAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734DD234CC2A3000E53CC /* ToolRectAbstract.m */; };
+		414734F6234CC2A5000E53CC /* ImageDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734DE234CC2A3000E53CC /* ImageDocument.m */; };
+		414734F7234CC2A5000E53CC /* UploadWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734DF234CC2A3000E53CC /* UploadWindow.m */; };
+		414734F8234CC2A5000E53CC /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734E0234CC2A3000E53CC /* ImageView.m */; };
+		414734F9234CC2A5000E53CC /* OAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734E1234CC2A4000E53CC /* OAuth2WindowController.m */; };
+		414734FA234CC2A5000E53CC /* TextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734E2234CC2A4000E53CC /* TextFieldView.m */; };
+		414734FB234CC2A5000E53CC /* ToolWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734E3234CC2A4000E53CC /* ToolWindow.m */; };
+		414734FC234CC2A5000E53CC /* UploadWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734E4234CC2A5000E53CC /* UploadWindowController.m */; };
+		414734FD234CC2A5000E53CC /* EditorWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734E5234CC2A5000E53CC /* EditorWindowController.m */; };
+		414734FE234CC2A5000E53CC /* ToolArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 414734E6234CC2A5000E53CC /* ToolArrow.m */; };
+		41473504234CC6E4000E53CC /* Upload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 414734FF234CC6E3000E53CC /* Upload.xib */; };
+		41473505234CC6E4000E53CC /* ToolPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41473500234CC6E4000E53CC /* ToolPalette.xib */; };
+		41473506234CC6E4000E53CC /* ImageDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41473501234CC6E4000E53CC /* ImageDocument.xib */; };
+		41473507234CC6E4000E53CC /* OAuth2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41473502234CC6E4000E53CC /* OAuth2.xib */; };
+		41473508234CC6E4000E53CC /* Editor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41473503234CC6E4000E53CC /* Editor.xib */; };
+		4147350C234CC7F8000E53CC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4147350A234CC7F8000E53CC /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41473475234B3FD8000E53CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41473459234B3FD5000E53CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41473460234B3FD5000E53CC;
+			remoteInfo = tinge;
+		};
+		41473480234B3FD8000E53CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41473459234B3FD5000E53CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41473460234B3FD5000E53CC;
+			remoteInfo = tinge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41473461234B3FD5000E53CC /* Tinge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41473464234B3FD5000E53CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41473465234B3FD5000E53CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41473467234B3FD8000E53CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4147346C234B3FD8000E53CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4147346D234B3FD8000E53CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4147346F234B3FD8000E53CC /* tinge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tinge.entitlements; sourceTree = "<group>"; };
+		41473474234B3FD8000E53CC /* TingeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TingeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41473478234B3FD8000E53CC /* tingeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tingeTests.m; sourceTree = "<group>"; };
+		4147347A234B3FD8000E53CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4147347F234B3FD8000E53CC /* TingeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TingeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41473483234B3FD8000E53CC /* tingeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tingeUITests.m; sourceTree = "<group>"; };
+		41473485234B3FD8000E53CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41473492234C0B69000E53CC /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcut.h; sourceTree = "<group>"; };
+		41473493234C0B69000E53CC /* MASShortcutBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutBinder.m; sourceTree = "<group>"; };
+		41473494234C0B69000E53CC /* MASHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASHotKey.h; sourceTree = "<group>"; };
+		41473495234C0B69000E53CC /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
+		41473496234C0B69000E53CC /* MASShortcut.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = MASShortcut.modulemap; sourceTree = "<group>"; };
+		41473497234C0B69000E53CC /* MASShortcutValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutValidator.m; sourceTree = "<group>"; };
+		41473498234C0B69000E53CC /* MASShortcutView+Bindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+Bindings.h"; sourceTree = "<group>"; };
+		41473499234C0B69000E53CC /* MASShortcutMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutMonitor.m; sourceTree = "<group>"; };
+		4147349A234C0B6A000E53CC /* MASDictionaryTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASDictionaryTransformer.m; sourceTree = "<group>"; };
+		4147349B234C0B6A000E53CC /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutView.h; sourceTree = "<group>"; };
+		4147349C234C0B6A000E53CC /* MASShortcutView+Bindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+Bindings.m"; sourceTree = "<group>"; };
+		4147349D234C0B6A000E53CC /* MASShortcutValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutValidator.h; sourceTree = "<group>"; };
+		4147349E234C0B6A000E53CC /* MASKeyCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASKeyCodes.h; sourceTree = "<group>"; };
+		4147349F234C0B6A000E53CC /* MASShortcutBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutBinder.h; sourceTree = "<group>"; };
+		414734A0234C0B6A000E53CC /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcut.m; sourceTree = "<group>"; };
+		414734A1234C0B6A000E53CC /* MASHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASHotKey.m; sourceTree = "<group>"; };
+		414734A2234C0B6A000E53CC /* MASShortcutMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutMonitor.h; sourceTree = "<group>"; };
+		414734A3234C0B6A000E53CC /* MASLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLocalization.m; sourceTree = "<group>"; };
+		414734A4234C0B6A000E53CC /* MASLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLocalization.h; sourceTree = "<group>"; };
+		414734A5234C0B6A000E53CC /* MASDictionaryTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASDictionaryTransformer.h; sourceTree = "<group>"; };
+		414734B0234C0B9C000E53CC /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		414734B1234C0B9C000E53CC /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		414734B3234CC255000E53CC /* ToolPaletteWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolPaletteWindowController.h; sourceTree = "<group>"; };
+		414734B4234CC255000E53CC /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		414734B5234CC255000E53CC /* Pasteboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pasteboard.h; sourceTree = "<group>"; };
+		414734B6234CC255000E53CC /* EditorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditorModel.h; sourceTree = "<group>"; };
+		414734B7234CC255000E53CC /* FileName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileName.h; sourceTree = "<group>"; };
+		414734B8234CC255000E53CC /* ToolText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolText.h; sourceTree = "<group>"; };
+		414734B9234CC255000E53CC /* PresentationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationManager.h; sourceTree = "<group>"; };
+		414734BA234CC255000E53CC /* UploadWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadWindow.h; sourceTree = "<group>"; };
+		414734BB234CC255000E53CC /* UploadStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadStorage.h; sourceTree = "<group>"; };
+		414734BC234CC255000E53CC /* OAuthStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthStorage.h; sourceTree = "<group>"; };
+		414734BD234CC256000E53CC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		414734BE234CC256000E53CC /* ImageDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDocument.h; sourceTree = "<group>"; };
+		414734BF234CC256000E53CC /* ScreenshotWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotWindow.h; sourceTree = "<group>"; };
+		414734C0234CC256000E53CC /* ScreenshotDelegator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotDelegator.h; sourceTree = "<group>"; };
+		414734C1234CC256000E53CC /* ToolRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolRect.h; sourceTree = "<group>"; };
+		414734C2234CC256000E53CC /* ToolMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolMark.h; sourceTree = "<group>"; };
+		414734C3234CC256000E53CC /* DropboxUploadStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropboxUploadStorage.h; sourceTree = "<group>"; };
+		414734C4234CC256000E53CC /* TextFieldProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldProtocol.h; sourceTree = "<group>"; };
+		414734C5234CC257000E53CC /* ScreenshotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotView.h; sourceTree = "<group>"; };
+		414734C6234CC257000E53CC /* ToolWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolWindow.h; sourceTree = "<group>"; };
+		414734C7234CC257000E53CC /* CropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CropView.h; sourceTree = "<group>"; };
+		414734C8234CC257000E53CC /* ImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		414734C9234CC257000E53CC /* ToolArrow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolArrow.h; sourceTree = "<group>"; };
+		414734CA234CC257000E53CC /* TextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldView.h; sourceTree = "<group>"; };
+		414734CB234CC257000E53CC /* OAuth2WindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuth2WindowController.h; sourceTree = "<group>"; };
+		414734CC234CC258000E53CC /* UploadWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadWindowController.h; sourceTree = "<group>"; };
+		414734CD234CC258000E53CC /* ToolRectAbstract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolRectAbstract.h; sourceTree = "<group>"; };
+		414734CE234CC258000E53CC /* EditorWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditorWindowController.h; sourceTree = "<group>"; };
+		414734CF234CC29F000E53CC /* CropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropView.m; sourceTree = "<group>"; };
+		414734D0234CC29F000E53CC /* ToolRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolRect.m; sourceTree = "<group>"; };
+		414734D1234CC2A0000E53CC /* FileName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileName.m; sourceTree = "<group>"; };
+		414734D2234CC2A0000E53CC /* ToolText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolText.m; sourceTree = "<group>"; };
+		414734D4234CC2A0000E53CC /* Pasteboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pasteboard.m; sourceTree = "<group>"; };
+		414734D5234CC2A1000E53CC /* OAuthStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthStorage.m; sourceTree = "<group>"; };
+		414734D6234CC2A1000E53CC /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		414734D7234CC2A1000E53CC /* ToolMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolMark.m; sourceTree = "<group>"; };
+		414734D8234CC2A1000E53CC /* ToolPaletteWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolPaletteWindowController.m; sourceTree = "<group>"; };
+		414734D9234CC2A2000E53CC /* ScreenshotWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenshotWindow.m; sourceTree = "<group>"; };
+		414734DA234CC2A2000E53CC /* PresentationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationManager.m; sourceTree = "<group>"; };
+		414734DB234CC2A2000E53CC /* ScreenshotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenshotView.m; sourceTree = "<group>"; };
+		414734DC234CC2A2000E53CC /* DropboxUploadStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxUploadStorage.m; sourceTree = "<group>"; };
+		414734DD234CC2A3000E53CC /* ToolRectAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolRectAbstract.m; sourceTree = "<group>"; };
+		414734DE234CC2A3000E53CC /* ImageDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDocument.m; sourceTree = "<group>"; };
+		414734DF234CC2A3000E53CC /* UploadWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadWindow.m; sourceTree = "<group>"; };
+		414734E0234CC2A3000E53CC /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		414734E1234CC2A4000E53CC /* OAuth2WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth2WindowController.m; sourceTree = "<group>"; };
+		414734E2234CC2A4000E53CC /* TextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldView.m; sourceTree = "<group>"; };
+		414734E3234CC2A4000E53CC /* ToolWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolWindow.m; sourceTree = "<group>"; };
+		414734E4234CC2A5000E53CC /* UploadWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadWindowController.m; sourceTree = "<group>"; };
+		414734E5234CC2A5000E53CC /* EditorWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorWindowController.m; sourceTree = "<group>"; };
+		414734E6234CC2A5000E53CC /* ToolArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolArrow.m; sourceTree = "<group>"; };
+		414734FF234CC6E3000E53CC /* Upload.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Upload.xib; sourceTree = "<group>"; };
+		41473500234CC6E4000E53CC /* ToolPalette.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolPalette.xib; sourceTree = "<group>"; };
+		41473501234CC6E4000E53CC /* ImageDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDocument.xib; sourceTree = "<group>"; };
+		41473502234CC6E4000E53CC /* OAuth2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuth2.xib; sourceTree = "<group>"; };
+		41473503234CC6E4000E53CC /* Editor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Editor.xib; sourceTree = "<group>"; };
+		4147350B234CC7F8000E53CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
+		4147350D234CCDD9000E53CC /* TingeRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TingeRelease.entitlements; path = Tinge/TingeRelease.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4147345E234B3FD5000E53CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41473471234B3FD8000E53CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4147347C234B3FD8000E53CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41473458234B3FD5000E53CC = {
+			isa = PBXGroup;
+			children = (
+				4147350D234CCDD9000E53CC /* TingeRelease.entitlements */,
+				41473509234CC7F8000E53CC /* Base.lproj */,
+				414734AF234C0B80000E53CC /* NSData */,
+				41473491234C0B3E000E53CC /* MASShortcut */,
+				41473463234B3FD5000E53CC /* tinge */,
+				41473477234B3FD8000E53CC /* tingeTests */,
+				41473482234B3FD8000E53CC /* tingeUITests */,
+				41473462234B3FD5000E53CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41473462234B3FD5000E53CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41473461234B3FD5000E53CC /* Tinge.app */,
+				41473474234B3FD8000E53CC /* TingeTests.xctest */,
+				4147347F234B3FD8000E53CC /* TingeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41473463234B3FD5000E53CC /* tinge */ = {
+			isa = PBXGroup;
+			children = (
+				41473503234CC6E4000E53CC /* Editor.xib */,
+				41473501234CC6E4000E53CC /* ImageDocument.xib */,
+				41473502234CC6E4000E53CC /* OAuth2.xib */,
+				41473500234CC6E4000E53CC /* ToolPalette.xib */,
+				414734FF234CC6E3000E53CC /* Upload.xib */,
+				41473464234B3FD5000E53CC /* AppDelegate.h */,
+				41473465234B3FD5000E53CC /* AppDelegate.m */,
+				414734CF234CC29F000E53CC /* CropView.m */,
+				414734DC234CC2A2000E53CC /* DropboxUploadStorage.m */,
+				414734E5234CC2A5000E53CC /* EditorWindowController.m */,
+				414734D1234CC2A0000E53CC /* FileName.m */,
+				414734DE234CC2A3000E53CC /* ImageDocument.m */,
+				414734E0234CC2A3000E53CC /* ImageView.m */,
+				414734E1234CC2A4000E53CC /* OAuth2WindowController.m */,
+				414734D5234CC2A1000E53CC /* OAuthStorage.m */,
+				414734D4234CC2A0000E53CC /* Pasteboard.m */,
+				414734DA234CC2A2000E53CC /* PresentationManager.m */,
+				414734DB234CC2A2000E53CC /* ScreenshotView.m */,
+				414734D9234CC2A2000E53CC /* ScreenshotWindow.m */,
+				414734E2234CC2A4000E53CC /* TextFieldView.m */,
+				414734D6234CC2A1000E53CC /* Tool.m */,
+				414734E6234CC2A5000E53CC /* ToolArrow.m */,
+				414734D7234CC2A1000E53CC /* ToolMark.m */,
+				414734D8234CC2A1000E53CC /* ToolPaletteWindowController.m */,
+				414734D0234CC29F000E53CC /* ToolRect.m */,
+				414734DD234CC2A3000E53CC /* ToolRectAbstract.m */,
+				414734D2234CC2A0000E53CC /* ToolText.m */,
+				414734E3234CC2A4000E53CC /* ToolWindow.m */,
+				414734DF234CC2A3000E53CC /* UploadWindow.m */,
+				414734B7234CC255000E53CC /* FileName.h */,
+				414734E4234CC2A5000E53CC /* UploadWindowController.m */,
+				414734BD234CC256000E53CC /* Constants.h */,
+				414734C7234CC257000E53CC /* CropView.h */,
+				414734C3234CC256000E53CC /* DropboxUploadStorage.h */,
+				414734B6234CC255000E53CC /* EditorModel.h */,
+				414734CE234CC258000E53CC /* EditorWindowController.h */,
+				414734BE234CC256000E53CC /* ImageDocument.h */,
+				414734C8234CC257000E53CC /* ImageView.h */,
+				414734CB234CC257000E53CC /* OAuth2WindowController.h */,
+				414734BC234CC255000E53CC /* OAuthStorage.h */,
+				414734B5234CC255000E53CC /* Pasteboard.h */,
+				414734B9234CC255000E53CC /* PresentationManager.h */,
+				414734C0234CC256000E53CC /* ScreenshotDelegator.h */,
+				414734C5234CC257000E53CC /* ScreenshotView.h */,
+				414734BF234CC256000E53CC /* ScreenshotWindow.h */,
+				414734C4234CC256000E53CC /* TextFieldProtocol.h */,
+				414734CA234CC257000E53CC /* TextFieldView.h */,
+				414734B4234CC255000E53CC /* Tool.h */,
+				414734C9234CC257000E53CC /* ToolArrow.h */,
+				414734C2234CC256000E53CC /* ToolMark.h */,
+				414734B3234CC255000E53CC /* ToolPaletteWindowController.h */,
+				414734C1234CC256000E53CC /* ToolRect.h */,
+				414734CD234CC258000E53CC /* ToolRectAbstract.h */,
+				414734B8234CC255000E53CC /* ToolText.h */,
+				414734C6234CC257000E53CC /* ToolWindow.h */,
+				414734BB234CC255000E53CC /* UploadStorage.h */,
+				414734BA234CC255000E53CC /* UploadWindow.h */,
+				414734CC234CC258000E53CC /* UploadWindowController.h */,
+				41473467234B3FD8000E53CC /* Assets.xcassets */,
+				4147346C234B3FD8000E53CC /* Info.plist */,
+				4147346D234B3FD8000E53CC /* main.m */,
+				4147346F234B3FD8000E53CC /* tinge.entitlements */,
+			);
+			path = tinge;
+			sourceTree = "<group>";
+		};
+		41473477234B3FD8000E53CC /* tingeTests */ = {
+			isa = PBXGroup;
+			children = (
+				41473478234B3FD8000E53CC /* tingeTests.m */,
+				4147347A234B3FD8000E53CC /* Info.plist */,
+			);
+			path = tingeTests;
+			sourceTree = "<group>";
+		};
+		41473482234B3FD8000E53CC /* tingeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41473483234B3FD8000E53CC /* tingeUITests.m */,
+				41473485234B3FD8000E53CC /* Info.plist */,
+			);
+			path = tingeUITests;
+			sourceTree = "<group>";
+		};
+		41473491234C0B3E000E53CC /* MASShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				414734A5234C0B6A000E53CC /* MASDictionaryTransformer.h */,
+				4147349A234C0B6A000E53CC /* MASDictionaryTransformer.m */,
+				41473494234C0B69000E53CC /* MASHotKey.h */,
+				414734A1234C0B6A000E53CC /* MASHotKey.m */,
+				4147349E234C0B6A000E53CC /* MASKeyCodes.h */,
+				414734A4234C0B6A000E53CC /* MASLocalization.h */,
+				414734A3234C0B6A000E53CC /* MASLocalization.m */,
+				41473492234C0B69000E53CC /* MASShortcut.h */,
+				414734A0234C0B6A000E53CC /* MASShortcut.m */,
+				41473496234C0B69000E53CC /* MASShortcut.modulemap */,
+				4147349F234C0B6A000E53CC /* MASShortcutBinder.h */,
+				41473493234C0B69000E53CC /* MASShortcutBinder.m */,
+				414734A2234C0B6A000E53CC /* MASShortcutMonitor.h */,
+				41473499234C0B69000E53CC /* MASShortcutMonitor.m */,
+				4147349D234C0B6A000E53CC /* MASShortcutValidator.h */,
+				41473497234C0B69000E53CC /* MASShortcutValidator.m */,
+				4147349B234C0B6A000E53CC /* MASShortcutView.h */,
+				41473495234C0B69000E53CC /* MASShortcutView.m */,
+				41473498234C0B69000E53CC /* MASShortcutView+Bindings.h */,
+				4147349C234C0B6A000E53CC /* MASShortcutView+Bindings.m */,
+			);
+			path = MASShortcut;
+			sourceTree = "<group>";
+		};
+		414734AF234C0B80000E53CC /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				414734B1234C0B9C000E53CC /* NSData+Base64.h */,
+				414734B0234C0B9C000E53CC /* NSData+Base64.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		41473509234CC7F8000E53CC /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4147350A234CC7F8000E53CC /* MainMenu.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41473460234B3FD5000E53CC /* Tinge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41473488234B3FD8000E53CC /* Build configuration list for PBXNativeTarget "Tinge" */;
+			buildPhases = (
+				4147345D234B3FD5000E53CC /* Sources */,
+				4147345E234B3FD5000E53CC /* Frameworks */,
+				4147345F234B3FD5000E53CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tinge;
+			productName = tinge;
+			productReference = 41473461234B3FD5000E53CC /* Tinge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41473473234B3FD8000E53CC /* TingeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4147348B234B3FD8000E53CC /* Build configuration list for PBXNativeTarget "TingeTests" */;
+			buildPhases = (
+				41473470234B3FD8000E53CC /* Sources */,
+				41473471234B3FD8000E53CC /* Frameworks */,
+				41473472234B3FD8000E53CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41473476234B3FD8000E53CC /* PBXTargetDependency */,
+			);
+			name = TingeTests;
+			productName = tingeTests;
+			productReference = 41473474234B3FD8000E53CC /* TingeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4147347E234B3FD8000E53CC /* TingeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4147348E234B3FD8000E53CC /* Build configuration list for PBXNativeTarget "TingeUITests" */;
+			buildPhases = (
+				4147347B234B3FD8000E53CC /* Sources */,
+				4147347C234B3FD8000E53CC /* Frameworks */,
+				4147347D234B3FD8000E53CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41473481234B3FD8000E53CC /* PBXTargetDependency */,
+			);
+			name = TingeUITests;
+			productName = tingeUITests;
+			productReference = 4147347F234B3FD8000E53CC /* TingeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41473459234B3FD5000E53CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = " Sergey Dolin";
+				TargetAttributes = {
+					41473460234B3FD5000E53CC = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					41473473234B3FD8000E53CC = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 41473460234B3FD5000E53CC;
+					};
+					4147347E234B3FD8000E53CC = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 41473460234B3FD5000E53CC;
+					};
+				};
+			};
+			buildConfigurationList = 4147345C234B3FD5000E53CC /* Build configuration list for PBXProject "Tinge" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41473458234B3FD5000E53CC;
+			productRefGroup = 41473462234B3FD5000E53CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41473460234B3FD5000E53CC /* Tinge */,
+				41473473234B3FD8000E53CC /* TingeTests */,
+				4147347E234B3FD8000E53CC /* TingeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4147345F234B3FD5000E53CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41473508234CC6E4000E53CC /* Editor.xib in Resources */,
+				41473468234B3FD8000E53CC /* Assets.xcassets in Resources */,
+				41473505234CC6E4000E53CC /* ToolPalette.xib in Resources */,
+				41473506234CC6E4000E53CC /* ImageDocument.xib in Resources */,
+				41473507234CC6E4000E53CC /* OAuth2.xib in Resources */,
+				4147350C234CC7F8000E53CC /* MainMenu.xib in Resources */,
+				41473504234CC6E4000E53CC /* Upload.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41473472234B3FD8000E53CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4147347D234B3FD8000E53CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4147345D234B3FD5000E53CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414734A7234C0B6A000E53CC /* MASShortcutView.m in Sources */,
+				414734E8234CC2A5000E53CC /* ToolRect.m in Sources */,
+				414734A8234C0B6A000E53CC /* MASShortcutValidator.m in Sources */,
+				414734A6234C0B6A000E53CC /* MASShortcutBinder.m in Sources */,
+				414734F6234CC2A5000E53CC /* ImageDocument.m in Sources */,
+				414734AE234C0B6A000E53CC /* MASLocalization.m in Sources */,
+				414734FB234CC2A5000E53CC /* ToolWindow.m in Sources */,
+				414734F3234CC2A5000E53CC /* ScreenshotView.m in Sources */,
+				414734E9234CC2A5000E53CC /* FileName.m in Sources */,
+				414734F9234CC2A5000E53CC /* OAuth2WindowController.m in Sources */,
+				414734AD234C0B6A000E53CC /* MASHotKey.m in Sources */,
+				414734B2234C0B9C000E53CC /* NSData+Base64.m in Sources */,
+				414734EA234CC2A5000E53CC /* ToolText.m in Sources */,
+				414734F0234CC2A5000E53CC /* ToolPaletteWindowController.m in Sources */,
+				414734F4234CC2A5000E53CC /* DropboxUploadStorage.m in Sources */,
+				414734FA234CC2A5000E53CC /* TextFieldView.m in Sources */,
+				414734FC234CC2A5000E53CC /* UploadWindowController.m in Sources */,
+				4147346E234B3FD8000E53CC /* main.m in Sources */,
+				414734F5234CC2A5000E53CC /* ToolRectAbstract.m in Sources */,
+				414734EC234CC2A5000E53CC /* Pasteboard.m in Sources */,
+				414734F8234CC2A5000E53CC /* ImageView.m in Sources */,
+				414734A9234C0B6A000E53CC /* MASShortcutMonitor.m in Sources */,
+				414734AC234C0B6A000E53CC /* MASShortcut.m in Sources */,
+				414734AA234C0B6A000E53CC /* MASDictionaryTransformer.m in Sources */,
+				414734EE234CC2A5000E53CC /* Tool.m in Sources */,
+				414734FD234CC2A5000E53CC /* EditorWindowController.m in Sources */,
+				414734F7234CC2A5000E53CC /* UploadWindow.m in Sources */,
+				414734F1234CC2A5000E53CC /* ScreenshotWindow.m in Sources */,
+				414734ED234CC2A5000E53CC /* OAuthStorage.m in Sources */,
+				414734EF234CC2A5000E53CC /* ToolMark.m in Sources */,
+				414734FE234CC2A5000E53CC /* ToolArrow.m in Sources */,
+				414734E7234CC2A5000E53CC /* CropView.m in Sources */,
+				414734AB234C0B6A000E53CC /* MASShortcutView+Bindings.m in Sources */,
+				41473466234B3FD5000E53CC /* AppDelegate.m in Sources */,
+				414734F2234CC2A5000E53CC /* PresentationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41473470234B3FD8000E53CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41473479234B3FD8000E53CC /* tingeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4147347B234B3FD8000E53CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41473484234B3FD8000E53CC /* tingeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41473476234B3FD8000E53CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41473460234B3FD5000E53CC /* Tinge */;
+			targetProxy = 41473475234B3FD8000E53CC /* PBXContainerItemProxy */;
+		};
+		41473481234B3FD8000E53CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41473460234B3FD5000E53CC /* Tinge */;
+			targetProxy = 41473480234B3FD8000E53CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4147350A234CC7F8000E53CC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4147350B234CC7F8000E53CC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41473486234B3FD8000E53CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		41473487234B3FD8000E53CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		41473489234B3FD8000E53CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = tinge/tinge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = ZR995K5J82;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = tinge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = s4y.solutions.Tinge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4147348A234B3FD8000E53CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = Tinge/TingeRelease.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = ZR995K5J82;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = tinge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = s4y.solutions.Tinge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Tinge;
+			};
+			name = Release;
+		};
+		4147348C234B3FD8000E53CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZR995K5J82;
+				INFOPLIST_FILE = tingeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = s4y.solutions.tingeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tinge.app/Contents/MacOS/Tinge";
+			};
+			name = Debug;
+		};
+		4147348D234B3FD8000E53CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZR995K5J82;
+				INFOPLIST_FILE = tingeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = s4y.solutions.tingeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tinge.app/Contents/MacOS/Tinge";
+			};
+			name = Release;
+		};
+		4147348F234B3FD8000E53CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZR995K5J82;
+				INFOPLIST_FILE = tingeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = s4y.solutions.tingeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tinge;
+			};
+			name = Debug;
+		};
+		41473490234B3FD8000E53CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZR995K5J82;
+				INFOPLIST_FILE = tingeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = s4y.solutions.tingeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tinge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4147345C234B3FD5000E53CC /* Build configuration list for PBXProject "Tinge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41473486234B3FD8000E53CC /* Debug */,
+				41473487234B3FD8000E53CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41473488234B3FD8000E53CC /* Build configuration list for PBXNativeTarget "Tinge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41473489234B3FD8000E53CC /* Debug */,
+				4147348A234B3FD8000E53CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4147348B234B3FD8000E53CC /* Build configuration list for PBXNativeTarget "TingeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4147348C234B3FD8000E53CC /* Debug */,
+				4147348D234B3FD8000E53CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4147348E234B3FD8000E53CC /* Build configuration list for PBXNativeTarget "TingeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4147348F234B3FD8000E53CC /* Debug */,
+				41473490234B3FD8000E53CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41473459234B3FD5000E53CC /* Project object */;
+}
